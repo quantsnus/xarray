@@ -678,6 +678,7 @@ def _ensure_plottable(*args) -> None:
         np.datetime64,
         np.bool_,
         np.str_,
+        pd.DatetimeTZDtype,
     )
     other_types: tuple[type[object], ...] = (datetime,)
     cftime_datetime_types: tuple[type[object], ...] = (
